@@ -1,0 +1,64 @@
+.games-search {
+  width: 100%;
+
+  padding: 18px;
+
+  border: 2px solid var(--purple);
+
+  background: var(--bg-secondary);
+
+  color: var(--white);
+
+  border-radius: 15px;
+
+  margin-bottom: 25px;
+
+  font-size: 1rem;
+}
+
+.games-search::placeholder {
+  color: var(--gray);
+}
+
+.games-search:focus {
+  outline: none;
+
+  box-shadow:
+    0 0 20px rgba(139,92,246,.6);
+}
+
+.filter-buttons {
+  display: flex;
+
+  gap: 15px;
+
+  margin-bottom: 35px;
+
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+
+  background: var(--bg-secondary);
+
+  color: var(--white);
+
+  border: 1px solid var(--purple);
+
+  padding: 10px 18px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.filter-buttons button:hover {
+
+  background: var(--purple);
+
+  color: white;
+
+  transform: translateY(-3px);
+}

@@ -1,0 +1,279 @@
+.game-detail {
+
+  padding: 60px;
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+/* Tarjeta principal */
+.game-detail-card {
+
+  max-width: 1000px;
+
+  width: 100%;
+
+  background: var(--bg-secondary);
+
+  border-radius: 25px;
+
+  overflow: hidden;
+
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+
+  transition: .3s;
+
+  display: flex;
+
+  border: 1px solid rgba(128,128,128,.15);
+
+}
+
+.game-detail-card:hover {
+
+  box-shadow: 0 0 35px rgba(139, 92, 246, 0.5);
+
+}
+
+/* Imagen del detalle */
+.detail-image {
+
+  width: 50%;
+
+  height: 500px;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  background: var(--bg-primary);
+
+  padding: 20px;
+
+}
+
+/* Contenido */
+.detail-content {
+
+  width: 50%;
+
+  padding: 40px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+  color: var(--white);
+
+}
+
+/* Categoría */
+.detail-category {
+
+  display: inline-block;
+
+  background: var(--purple);
+
+  padding: 8px 14px;
+
+  border-radius: 20px;
+
+  font-size: .9rem;
+
+  color: white;
+
+}
+
+/* Título */
+.detail-content h1 {
+
+  margin-top:20px;
+
+  margin-bottom:10px;
+
+  font-size:3rem;
+
+  color: var(--white);
+
+  text-shadow:
+    0 0 10px rgba(139,92,246,.5);
+
+}
+
+/* Rating */
+.detail-rating {
+
+  color: gold;
+
+  font-size:1.2rem;
+
+  margin-bottom:20px;
+
+}
+
+/* Descripción */
+.detail-description {
+
+  color: var(--gray);
+
+  line-height:1.8;
+
+  margin-bottom:25px;
+
+}
+
+/* Precio */
+.detail-price {
+
+  color: var(--purple);
+
+  font-size:1.5rem;
+
+  font-weight:bold;
+
+  margin-bottom:15px;
+
+}
+
+/* Estados de stock */
+.available {
+
+  color:#22c55e;
+
+  font-weight:bold;
+
+  font-size:18px;
+
+  margin-bottom:20px;
+
+}
+
+.low-stock {
+
+  color:#facc15;
+
+  font-weight:bold;
+
+  font-size:18px;
+
+  margin-bottom:20px;
+
+}
+
+.no-stock {
+
+  color:#ef4444;
+
+  font-weight:bold;
+
+  font-size:18px;
+
+  margin-bottom:20px;
+
+}
+
+/* Botón */
+.detail-btn {
+
+  border:none;
+
+  background: var(--gradient);
+
+  padding:15px 35px;
+
+  border-radius:12px;
+
+  color:white;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:.3s;
+
+}
+
+.detail-btn:hover {
+
+  transform:scale(1.05);
+
+  box-shadow:
+    0 0 20px rgba(139,92,246,.7);
+
+}
+
+/* Botón agotado */
+.detail-btn.disabled {
+
+  background:#374151;
+
+  cursor:not-allowed;
+
+  opacity:.7;
+
+}
+
+.detail-btn.disabled:hover {
+
+  transform:none;
+
+  box-shadow:none;
+
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+  .game-detail {
+
+    padding:20px;
+
+  }
+
+  .game-detail-card {
+
+    flex-direction:column;
+
+  }
+
+  .detail-image {
+
+    width:100%;
+
+    height:350px;
+
+    min-height:auto;
+
+    object-fit:contain;
+
+  }
+
+  .detail-content {
+
+    width:100%;
+
+    padding:25px;
+
+  }
+
+  .detail-content h1 {
+
+    font-size:2.5rem;
+
+  }
+
+  .detail-description {
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+  }
+
+}

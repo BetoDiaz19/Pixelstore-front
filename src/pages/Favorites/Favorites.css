@@ -1,0 +1,9 @@
+.favorites-page {
+  padding: 50px;
+}
+
+.favorites-page h1 {
+  text-align: center;
+  color: var(--purple);
+  margin-bottom: 40px;
+}
