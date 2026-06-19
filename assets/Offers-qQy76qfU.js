@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-DVpe7PXp.js";import{t}from"./SpecialOffers-B0l5hFbn.js";var n=e();function r(){return(0,n.jsx)(`div`,{className:`page-animation`,style:{paddingTop:`40px`},children:(0,n.jsx)(t,{})})}export{r as default};
