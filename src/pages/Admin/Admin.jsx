@@ -7,9 +7,8 @@ function Admin() {
 
   const fetchGames = async () => {
     try {
-      const response = await axios.get(
-        "http://localhost:5000/api/games"
-      );
+      
+    const response = await axios.get("https://pixelstore-back.onrender.com/api/games");
 
       setGames(response.data);
     } catch (error) {
@@ -37,14 +36,9 @@ function Admin() {
       const token =
         localStorage.getItem("token");
 
-      await axios.delete(
-        `http://localhost:5000/api/games/${id}`,
-        {
-          headers: {
-            Authorization: `Bearer ${token}`
-          }
-        }
-      );
+      await axios.delete(`https://pixelstore-back.onrender.com/api/games/${id}`, {
+      headers: { Authorization: `Bearer ${token}` }
+      });
 
       Swal.fire({
         icon: "success",
@@ -210,15 +204,9 @@ function Admin() {
       const token =
         localStorage.getItem("token");
 
-      await axios.post(
-        "http://localhost:5000/api/games",
-        formValues,
-        {
-          headers: {
-            Authorization: `Bearer ${token}`
-          }
-        }
-      );
+     await axios.post("https://pixelstore-back.onrender.com/api/games", formValues, {
+    headers: { Authorization: `Bearer ${token}`} 
+    });
 
       Swal.fire({
         icon: "success",
@@ -409,16 +397,9 @@ function Admin() {
       const token =
         localStorage.getItem("token");
 
-      await axios.put(
-        `http://localhost:5000/api/games/${game.id}`,
-        formValues,
-        {
-          headers: {
-            Authorization:
-              `Bearer ${token}`
-          }
-        }
-      );
+      await axios.put(`https://pixelstore-back.onrender.com/api/games/${game.id}`, formValues, {
+    headers: { Authorization: `Bearer ${token}` }
+    });
 
       Swal.fire({
         icon: "success",

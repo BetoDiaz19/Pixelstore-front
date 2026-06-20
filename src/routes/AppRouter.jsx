@@ -90,8 +90,8 @@ function AppRouter() {
   }
 
   return (
-
-    <BrowserRouter>
+    // AQUÍ ESTÁ EL CAMBIO CLAVE 👇
+    <BrowserRouter basename="/Pixelstore-front">
 
       <Navbar />
 
